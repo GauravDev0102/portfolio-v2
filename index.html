@@ -3,130 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Gaurav Singh — Full-Stack Web Developer. Interactive 3D, real-world apps, and live platforms." />
-  <title>Gaurav Singh — Web Developer</title>
+  <meta name="description" content="Gaurav Singh — Full-Stack Web Developer. Next.js · NestJS · PostgreSQL · Three.js. 4 live projects." />
+  <title>Gaurav Singh — gaurav@dev:~</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <canvas id="matrix"></canvas>
+  <div class="scanlines"></div>
+
   <!-- NAV -->
   <nav class="nav">
-    <a href="#top" class="nav-logo">GS<span>.</span></a>
+    <a href="#top" class="nav-logo">gaurav<span>@dev</span>:~$</a>
     <div class="nav-links" id="nav-links">
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#projects">./projects</a>
+      <a href="#about">./about</a>
+      <a href="#contact">./contact</a>
     </div>
-    <button class="nav-burger" id="burger" aria-label="Menu">☰</button>
+    <button class="nav-burger" id="burger" aria-label="Menu">[≡]</button>
   </nav>
 
   <!-- HERO -->
   <header class="hero" id="top">
-    <div class="hero-blob blob-1"></div>
-    <div class="hero-blob blob-2"></div>
-    <p class="hero-hi">Hi, I'm</p>
-    <h1>Gaurav Singh<span>.</span></h1>
-    <p class="hero-sub">
-      Full-Stack Web Developer — I build <b>live platforms</b>, <b>interactive 3D experiences</b>
-      and <b>real-world tools</b> that people actually use.
-    </p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn btn-primary">View Projects ↓</a>
-      <a href="https://github.com/GauravDev0102" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
-    </div>
-    <div class="hero-stats">
-      <div><b>4+</b><span>Live Projects</span></div>
-      <div><b>3D / 4</b><span>Featured Builds</span></div>
-      <div><b>RBAC · Auth · Realtime</b><span>Full-Stack Skills</span></div>
+    <div class="hero-inner">
+      <div class="avatar-frame">
+        <img src="images/profile.jpg" alt="Gaurav Singh" class="avatar" />
+        <div class="avatar-scan"></div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-line"><span class="prompt">$</span> whoami</p>
+        <h1 class="typing" id="hero-name"></h1>
+        <p class="hero-role"><span class="prompt">&gt;</span> <span id="role-cycle"></span><span class="caret">_</span></p>
+        <p class="hero-sub">
+          I build <b>live platforms</b>, <b>3D browser experiences</b> and <b>real-world tools</b>.
+          All 4 featured projects below are deployed — knock yourself out.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-green">[ view_projects ]</a>
+          <a href="https://github.com/GauravDev0102" target="_blank" rel="noopener" class="btn btn-ghost">[ github ↗ ]</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>4</b><span>live_projects</span></div>
+          <div><b>24/7</b><span>uptime_mindset</span></div>
+          <div><b>RBAC+RT</b><span>fullstack_skills</span></div>
+        </div>
+      </div>
     </div>
   </header>
 
   <!-- PROJECTS -->
   <section class="section" id="projects">
-    <h2 class="section-title">Featured <span>Projects</span></h2>
-    <p class="section-sub">Every project below is live — click through and try them.</p>
+    <h2 class="section-title"><span class="dim">gaurav@dev:~$</span> ls <span class="accent">projects/</span></h2>
+    <p class="section-sub">4 entries — all deployed, all maintained.</p>
 
     <div class="projects">
 
       <!-- 1 -->
       <article class="card card-lg">
-        <div class="card-thumb thumb-1">🎓<div class="card-badge">Full-Stack · Flagship</div></div>
+        <div class="card-term">
+          <div class="term-bar"><span></span><span></span><span></span><i>placement-hub — zsh</i></div>
+          <div class="term-body">
+            <p><span class="dim">$</span> <span class="green">npm run</span> start-career</p>
+            <p><span class="green">✓</span> roles: admin · officer · recruiter · student</p>
+            <p><span class="green">✓</span> realtime: <span class="yellow">socket.io online</span></p>
+            <p><span class="green">✓</span> status: <b class="blink">● PRODUCTION</b></p>
+            <div class="term-emoji">🎓</div>
+          </div>
+        </div>
         <div class="card-body">
           <h3>PlacementHub — Campus Placement Platform</h3>
           <p>
-            A complete campus-placement management platform connecting students, recruiters and
-            placement cells — job postings with an eligibility engine, application pipelines,
-            <b>resume parsing with ATS scoring</b>, placement drives, analytics dashboards, audit
-            logs and <b>Socket.IO real-time notifications</b>. Four roles with granular RBAC (40+
-            permissions) and JWT auth with silent refresh.
+            Full-stack platform connecting students, recruiters & placement cells. 4-role RBAC
+            (40+ permissions), job eligibility engine, application pipeline, resume parsing with
+            ATS scoring, drives, analytics, audit logs and Socket.IO real-time notifications.
           </p>
-          <div class="stack">
-            <span>Next.js</span><span>NestJS</span><span>Prisma</span><span>PostgreSQL</span><span>Socket.IO</span><span>JWT</span>
-          </div>
+          <div class="stack"><span>Next.js 14</span><span>NestJS</span><span>Prisma</span><span>PostgreSQL</span><span>Socket.IO</span><span>JWT</span></div>
           <div class="card-links">
-            <a href="https://placement-hub-kohl.vercel.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo ↗</a>
-            <a href="https://github.com/GauravDev0102/placement-platform" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Code ↗</a>
+            <a href="https://placement-hub-kohl.vercel.app" target="_blank" rel="noopener" class="btn btn-green btn-sm">[ live_demo ]</a>
+            <a href="https://github.com/GauravDev0102/placement-platform" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">[ source ]</a>
           </div>
         </div>
       </article>
 
       <!-- 2 -->
       <article class="card">
-        <div class="card-thumb thumb-2">🪐<div class="card-badge">Three.js · Interactive 3D</div></div>
+        <div class="card-term">
+          <div class="term-bar"><span></span><span></span><span></span><i>solar-3d — zsh</i></div>
+          <div class="term-body">
+            <p><span class="dim">$</span> ./launch --orbits</p>
+            <p><span class="green">✓</span> 8 planets · nasa_textures</p>
+            <p><span class="green">✓</span> astro_bot: 250+ topics offline</p>
+            <div class="term-emoji">🪐</div>
+          </div>
+        </div>
         <div class="card-body">
           <h3>3D Solar System Explorer</h3>
-          <p>
-            An interactive Three.js solar system — NASA-style textured planets with motion trails
-            and an asteroid belt, cinematic camera fly-to navigation, live tactical minimap,
-            search + keyboard shortcuts, ambient sound, and a built-in
-            <b>Astro Bot chatbot</b> answering 250+ space topics fully offline.
-          </p>
-          <div class="stack">
-            <span>Three.js</span><span>JavaScript</span><span>Web Audio</span><span>GSAP-style FX</span>
-          </div>
+          <p>Interactive Three.js solar system — camera fly-to, motion trails, asteroid belt, tactical minimap, search + hotkeys, ambient sound, and a fully offline space Q&A chatbot.</p>
+          <div class="stack"><span>Three.js</span><span>Vanilla JS</span><span>Web Audio</span><span>Canvas</span></div>
           <div class="card-links">
-            <a href="https://solar-system-3d-one-wine.vercel.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live ↗</a>
-            <a href="https://github.com/GauravDev0102/solar-system-3d" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Code ↗</a>
+            <a href="https://solar-system-3d-one-wine.vercel.app" target="_blank" rel="noopener" class="btn btn-green btn-sm">[ launch ]</a>
+            <a href="https://github.com/GauravDev0102/solar-system-3d" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">[ source ]</a>
           </div>
         </div>
       </article>
 
       <!-- 3 -->
       <article class="card">
-        <div class="card-thumb thumb-3">🏪<div class="card-badge">Real-World · Bilingual</div></div>
+        <div class="card-term">
+          <div class="term-bar"><span></span><span></span><span></span><i>vyapar — zsh</i></div>
+          <div class="term-body">
+            <p><span class="dim">$</span> ./vyapar --lang hi,en</p>
+            <p><span class="green">✓</span> storefront + whatsapp_orders</p>
+            <p><span class="green">✓</span> qr_codes: printable</p>
+            <div class="term-emoji">🏪</div>
+          </div>
+        </div>
         <div class="card-body">
           <h3>Vyapar — Shop Management App</h3>
-          <p>
-            A shop-management web app for small local businesses: manage shop profile, products
-            and customer leads from one dashboard, with a
-            <b>bilingual (Hindi/English) storefront</b>, WhatsApp-based ordering and printable
-            QR codes. Includes a web dashboard and mobile app.
-          </p>
-          <div class="stack">
-            <span>Next.js</span><span>i18n</span><span>WhatsApp API</span><span>QR</span><span>Mobile</span>
-          </div>
+          <p>Shop management for small local businesses: products & leads dashboard, bilingual (Hindi/English) storefront, WhatsApp ordering, printable QR codes. Zero-config localStorage architecture.</p>
+          <div class="stack"><span>Next.js 16</span><span>React 19</span><span>Tailwind 4</span><span>i18n</span></div>
           <div class="card-links">
-            <a href="https://vyapar-delta.vercel.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live ↗</a>
-            <a href="https://github.com/GauravDev0102/vyapar" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Code ↗</a>
+            <a href="https://vyapar-delta.vercel.app" target="_blank" rel="noopener" class="btn btn-green btn-sm">[ live ]</a>
+            <a href="https://github.com/GauravDev0102/vyapar" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">[ source ]</a>
           </div>
         </div>
       </article>
 
       <!-- 4 -->
       <article class="card">
-        <div class="card-thumb thumb-4">🔧<div class="card-badge">Client Site · PWA</div></div>
+        <div class="card-term">
+          <div class="term-bar"><span></span><span></span><span></span><i>garhwal — zsh</i></div>
+          <div class="term-body">
+            <p><span class="dim">$</span> npm run build -- --pwa</p>
+            <p><span class="green">✓</span> vite + gsap + three.js</p>
+            <p><span class="green">✓</span> client: real store, real stakes</p>
+            <div class="term-emoji">🔧</div>
+          </div>
+        </div>
         <div class="card-body">
           <h3>Garhwal Hardware — Store Website</h3>
-          <p>
-            A high-performance bilingual website for a real (Ara, Bihar) hardware & building-materials
-            store — built with Vite, GSAP and Three.js, installable as a <b>PWA</b> with service-worker
-            offline support, optimized product imagery and full mobile performance.
-          </p>
-          <div class="stack">
-            <span>Vite</span><span>GSAP</span><span>Three.js</span><span>PWA</span><span>i18n</span>
-          </div>
+          <p>High-performance bilingual website for a real hardware store (Ara, Bihar). Vite + GSAP + Three.js, installable PWA with service worker offline support, optimized imagery, built for a real client.</p>
+          <div class="stack"><span>Vite</span><span>GSAP</span><span>Three.js</span><span>PWA</span></div>
           <div class="card-links">
-            <a href="https://garhwal-hardware.vercel.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live ↗</a>
-            <a href="https://github.com/GauravDev0102/garhwal-hardware" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Code ↗</a>
+            <a href="https://garhwal-hardware.vercel.app" target="_blank" rel="noopener" class="btn btn-green btn-sm">[ live ]</a>
+            <a href="https://github.com/GauravDev0102/garhwal-hardware" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">[ source ]</a>
           </div>
         </div>
       </article>
@@ -136,45 +157,49 @@
 
   <!-- ABOUT -->
   <section class="section" id="about">
-    <h2 class="section-title">About <span>Me</span></h2>
+    <h2 class="section-title"><span class="dim">gaurav@dev:~$</span> cat <span class="accent">about.txt</span></h2>
     <div class="about">
-      <div class="about-text">
-        <p>
-          I'm a full-stack web developer who loves shipping — not just coding. From a
-          <b>production placement platform</b> with role-based access and real-time pipelines, to
-          <b>3D browser experiences</b>, to <b>tools for local businesses</b>, I build things that go live
-          and stay live.
-        </p>
-        <p>
-          My comfort zone: <b>Next.js / React</b> front-ends, <b>NestJS / Node</b> back-ends,
-          <b>Prisma + PostgreSQL</b> data layers, real-time features, and pushing browsers
-          further with <b>Three.js</b> and motion.
-        </p>
-      </div>
-      <div class="about-skills">
-        <h4>Tech I work with</h4>
-        <div class="skills">
-          <span>JavaScript</span><span>TypeScript</span><span>Next.js</span><span>React</span>
-          <span>NestJS</span><span>Node.js</span><span>Prisma</span><span>PostgreSQL</span>
-          <span>Three.js</span><span>GSAP</span><span>PWA</span><span>Socket.IO</span>
-          <span>JWT Auth</span><span>RBAC</span><span>Vercel</span><span>Git</span>
+      <div class="terminal about-term reveal">
+        <div class="term-bar"><span></span><span></span><span></span><i>about — session</i></div>
+        <div class="term-body">
+          <p><span class="dim">gaurav@dev:~$</span> whoami</p>
+          <p class="out">Gaurav Singh — full-stack web developer</p>
+          <p><span class="dim">gaurav@dev:~$</span> cat philosophy.md</p>
+          <p class="out">Ship it. Then keep it alive. I don't collect tutorials — everything here is deployed and maintained.</p>
+          <p><span class="dim">gaurav@dev:~$</span> uptime --skills</p>
+          <p class="out">Next.js · React · NestJS · Node · Prisma · PostgreSQL · Three.js · GSAP · Socket.IO · JWT · PWA · i18n</p>
+          <p><span class="dim">gaurav@dev:~$</span> <span class="caret">_</span></p>
         </div>
+      </div>
+      <div class="about-side">
+        <div class="photo-frame reveal">
+          <img src="images/profile.jpg" alt="Gaurav Singh" class="about-photo" />
+          <div class="photo-scan"></div>
+        </div>
+        <p class="photo-caption">//_portal opened from a real wall — like my projects, nothing digital-only</p>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="section" id="contact">
-    <h2 class="section-title">Let's <span>Connect</span></h2>
-    <p class="section-sub">Open to freelance work, internships and full-stack roles.</p>
-    <div class="contact">
-      <a href="https://github.com/GauravDev0102" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
-      <a href="mailto:gaurav@example.com" class="btn btn-primary">Email Me ↗</a>
+    <h2 class="section-title"><span class="dim">gaurav@dev:~$</span> <span class="accent">ping</span> me</h2>
+    <p class="section-sub">Open to freelance, internships and full-stack roles. Response latency: &lt; 24h.</p>
+    <div class="contact terminal reveal">
+      <div class="term-bar"><span></span><span></span><span></span><i>contact — secure line</i></div>
+      <div class="term-body">
+        <p><span class="dim">$</span> mail --to employer</p>
+        <a href="mailto:sgaurav010206@gmail.com" class="cmd-out">→ sgaurav010206@gmail.com</a>
+        <p><span class="dim">$</span> dial --number 7294983667</p>
+        <a href="tel:+917294983667" class="cmd-out">→ +91 72949 83667</a>
+        <p><span class="dim">$</span> open --repo github</p>
+        <a href="https://github.com/GauravDev0102" target="_blank" rel="noopener" class="cmd-out">→ github.com/GauravDev0102</a>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
-    <p>Built with plain <b>HTML · CSS · JS</b> — no frameworks needed. © 2026 Gaurav Singh</p>
+    <p>[ <span class="green">EOF</span> ] built with plain HTML · CSS · JS — © 2026 Gaurav Singh</p>
   </footer>
 
   <script src="script.js"></script>
